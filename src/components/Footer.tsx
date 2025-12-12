@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="text-2xl font-bold text-[#F5B800] mb-4">InvestireConME</h3>
+            <h3 className="text-2xl font-bold text-[#F5B800] mb-4">InvestireConTE</h3>
             <p className="text-gray-300 mb-4">
               AR Consulting Financial Education
             </p>
@@ -20,8 +20,8 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail size={18} className="text-[#F5B800]" />
-                <a href="mailto:investireconme@gmail.com" className="text-gray-300 hover:text-[#F5B800] transition-colors">
-                  investireconme@gmail.com
+                <a href="mailto:investireconte@gmail.com" className="text-gray-300 hover:text-[#F5B800] transition-colors">
+                  investireconte@gmail.com
                 </a>
               </div>
               <div className="flex items-center space-x-3">
