@@ -66,8 +66,8 @@ export default function ContactSection() {
                   <Mail className="text-[#1B7F5C] flex-shrink-0 mt-1" size={24} />
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
-                    <a href="mailto:investireconme@gmail.com" className="text-gray-600 hover:text-[#1B7F5C] transition-colors">
-                      investireconme@gmail.com
+                    <a href="mailto:investireconte@gmail.com" className="text-gray-600 hover:text-[#1B7F5C] transition-colors">
+                      investireconte@gmail.com
                     </a>
                   </div>
                 </div>
