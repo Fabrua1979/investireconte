@@ -18,7 +18,7 @@ export default function Navbar() {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <h1 className="text-2xl font-bold text-[#1B7F5C]">InvestireConME</h1>
+            <h1 className="text-2xl font-bold text-[#1B7F5C]">InvestireConTE</h1>
           </div>
 
           {/* Desktop Navigation */}
