@@ -7,7 +7,7 @@ export default function WhyInvestSection() {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-[#0A3A2A] mb-4">
-            Perché Investire con ME?
+            Perché Investire con TE?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             L'inflazione è una silenziosa piaga mangiasoldi: lavora nell'ombra, erodendo giorno dopo giorno il valore dei tuoi risparmi.
