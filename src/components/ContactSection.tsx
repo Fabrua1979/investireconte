@@ -186,7 +186,7 @@ export default function ContactSection() {
         <Card className="mt-12 bg-gradient-to-r from-[#1B7F5C] to-[#0A3A2A] text-white">
           <CardContent className="pt-8 pb-8">
             <div className="text-center">
-              <h3 className="text-3xl font-bold mb-4">Durata: 8 ore | Prezzo: 170€ p.p.</h3>
+              <h3 className="text-3xl font-bold mb-4">Durata: 8 ore </h3>
               <p className="text-xl mb-2">POSTI LIMITATI</p>
               <p className="text-lg">
                 Prenota subito il tuo posto e inizia il tuo percorso verso l'indipendenza finanziaria
