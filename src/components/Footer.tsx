@@ -10,6 +10,9 @@ export default function Footer() {
             <p className="text-gray-300 mb-4">
               AR Consulting Financial Education
             </p>
+            <p className="text-gray-300 mb-4">
+              P.IVA: IT02951580428
+            </p>
             <p className="text-sm text-gray-400">
               Il tuo partner di fiducia per il successo finanziario
             </p>
@@ -20,8 +23,8 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail size={18} className="text-[#F5B800]" />
-                <a href="mailto:investireconte@gmail.com" className="text-gray-300 hover:text-[#F5B800] transition-colors">
-                  investireconte@gmail.com
+                <a href="mailto:info@investireconte.com" className="text-gray-300 hover:text-[#F5B800] transition-colors">
+                  info@investireconte.com
                 </a>
               </div>
               <div className="flex items-center space-x-3">
