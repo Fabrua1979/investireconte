@@ -20,7 +20,7 @@ export default function ContactSection() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    const mailtoLink = `mailto:investireconme@gmail.com?subject=Richiesta Informazioni Corso ETF&body=Nome: ${formData.name}%0D%0AEmail: ${formData.email}%0D%0ATelefono: ${formData.phone}%0D%0AAzienda: ${formData.company}%0D%0A%0D%0AMessaggio:%0D%0A${formData.message}`;
+    const mailtoLink = `mailto:info@investireconte.com?subject=Richiesta Informazioni Corso ETF&body=Nome: ${formData.name}%0D%0AEmail: ${formData.email}%0D%0ATelefono: ${formData.phone}%0D%0AAzienda: ${formData.company}%0D%0A%0D%0AMessaggio:%0D%0A${formData.message}`;
     
     window.location.href = mailtoLink;
     
@@ -66,8 +66,8 @@ export default function ContactSection() {
                   <Mail className="text-[#1B7F5C] flex-shrink-0 mt-1" size={24} />
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
-                    <a href="mailto:investireconte@gmail.com" className="text-gray-600 hover:text-[#1B7F5C] transition-colors">
-                      investireconte@gmail.com
+                    <a href="mailto:info@investireconte.com" className="text-gray-600 hover:text-[#1B7F5C] transition-colors">
+                      info@investireconte.com
                     </a>
                   </div>
                 </div>
