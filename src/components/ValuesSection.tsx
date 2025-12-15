@@ -10,7 +10,8 @@ const values = [
   {
     icon: Award,
     title: "Esperienza",
-    description: "250+ clienti soddisfatti e 10 anni di esperienza nel settore della formazione finanziaria.",
+    description: "In pochi anni abbiamo già accompagnato oltre 200 persone a comprendere come gestire i propri risparmi in autonomia. La nostra forza sta nella chiarezza del metodo e nella soddisfazione di chi ci ha seguito.
+",
   },
   {
     icon: Lightbulb,
