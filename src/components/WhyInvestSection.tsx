@@ -45,7 +45,7 @@ export default function WhyInvestSection() {
                   <div>
                     <h3 className="text-xl font-bold text-gray-900 mb-2">La Soluzione</h3>
                     <p className="text-gray-600">
-                      Imparare a gestire i tuoi risparmi in autonomia è più semplice di quanto pensi.Con un metodo pratico e accessibile, basato sugli ETF, puoi costruire un portafoglio efficiente, ridurre i costi e proteggere il tuo futuro. Non serve esperienza: serve solo la volontà di smettere di delegare 
+                      Imparare a gestire i tuoi risparmi in autonomia è più semplice di quanto pensi. Con un metodo pratico e accessibile, basato sugli ETF, puoi costruire un portafoglio efficiente, ridurre i costi e proteggere il tuo futuro. Non serve esperienza: serve solo la volontà di smettere di delegare 
                     </p>
                   </div>
                 </div>
