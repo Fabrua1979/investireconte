@@ -31,7 +31,7 @@ export default function WhyInvestSection() {
                   <div>
                     <h3 className="text-xl font-bold text-gray-900 mb-2">Il Problema</h3>
                     <p className="text-gray-600">
-                      Dal 2002 a oggi, i tuoi 100€ hanno perso quasi il 40% del loro valore reale: oggi valgono come circa 60€. (Fonte: ISTAT - Indice dei prezzi al consumo)
+                      Dal 2002 a oggi, 100€ hanno perso circa il 40% del loro potere d’acquisto: oggi valgono come 60€. Nel frattempo, la maggior parte dei fondi proposti dalle banche non ha battuto il mercato. Morale: tra inflazione e commissioni, i tuoi risparmi si stanno erodendo — lentamente, ma inesorabilmente
                     </p>
                   </div>
                 </div>
@@ -45,7 +45,7 @@ export default function WhyInvestSection() {
                   <div>
                     <h3 className="text-xl font-bold text-gray-900 mb-2">La Soluzione</h3>
                     <p className="text-gray-600">
-                      I risparmi che hai affidato alla banca, sono riusciti davvero a compensare questa perdita o a fare meglio?
+                      Imparare a gestire i tuoi risparmi in autonomia è più semplice di quanto pensi.Con un metodo pratico e accessibile, basato sugli ETF, puoi costruire un portafoglio efficiente, ridurre i costi e proteggere il tuo futuro. Non serve esperienza: serve solo la volontà di smettere di delegare 
                     </p>
                   </div>
                 </div>
@@ -59,7 +59,7 @@ export default function WhyInvestSection() {
                   <div>
                     <h3 className="text-xl font-bold text-gray-900 mb-2">Il Risultato</h3>
                     <p className="text-gray-600">
-                      Il denaro non è un fine, ma il mezzo che ci permette di vivere meglio e di garantire un futuro più semplice ai nostri figli.
+                      Il metodo che proponiamo ha prodotto rendimenti medi storici del 10% annuo. Non è una promessa, ma un dato: investire in modo consapevole ti permette di ottenere risultati pari o superiori al mercato, ma soprattutto, ti restituisce il controllo. Fonti: ISTAT, BCE – studi su inflazione e fondi a gestione attiva
                     </p>
                   </div>
                 </div>
