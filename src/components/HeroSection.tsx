@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Users, MapPin } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 export default function HeroSection() {
   const scrollToContact = () => {
@@ -27,23 +27,45 @@ export default function HeroSection() {
           <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-in fade-in slide-in-from-bottom-8 duration-700">
             Sei Pronto a Prendere il Controllo del Tuo Futuro Finanziario?
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-gray-200 animate-in fade-in slide-in-from-bottom-8 duration-700 delay-150">
-            Corso pratico sugli ETF per dipendenti aziendali. Impara a proteggere e far crescere il tuo patrimonio.
-          </p>
-
-          <div className="flex flex-wrap gap-4 mb-12 animate-in fade-in slide-in-from-bottom-8 duration-700 delay-300">
-            <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
-              <Users className="text-[#F5B800]" size={24} />
-              <span className="font-semibold">250+ Clienti</span>
-            </div>
-            <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
-              <MapPin className="text-[#F5B800]" size={24} />
-              <span className="font-semibold">10 Locations</span>
-            </div>
-            <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
-              <span className="text-2xl font-bold text-[#F5B800]">8h</span>
-              <span className="font-semibold">Durata Corso</span>
-            </div>
+          
+          <div className="text-lg md:text-xl mb-8 text-gray-100 leading-relaxed space-y-4 animate-in fade-in slide-in-from-bottom-8 duration-700 delay-150">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#F5B800] mb-4">Perché questo corso sugli ETF</h2>
+            
+            <p>
+              Il denaro non è un fine, ma un mezzo: se togliamo salute e affetti, resta lo strumento che ti permette di vivere con più serenità, di scegliere con libertà e di affrontare il futuro senza ansie inutili.
+            </p>
+            
+            <p>
+              Eppure, la maggior parte delle persone continua ad affidare i propri risparmi alle banche, convinta che sia la scelta più sicura.
+            </p>
+            
+            <p>
+              La realtà è diversa. Studi condotti da organismi europei hanno dimostrato che oltre il 90% dei fondi proposti dalle banche non riesce a superare i rendimenti del mercato di riferimento. Questo accade perché gran parte dei profitti viene assorbita da commissioni e costi di gestione, lasciando agli investitori solo le briciole. In altre parole: tu ti assumi il rischio, ma i guadagni reali finiscono altrove.
+            </p>
+            
+            <h3 className="text-xl md:text-2xl font-bold text-[#F5B800] mt-6 mb-3">L'effetto invisibile dell'inflazione</h3>
+            
+            <p>
+              C'è poi un nemico silenzioso: l'inflazione. Anche se lasci i soldi "fermi" sul conto, il loro potere d'acquisto diminuisce anno dopo anno.
+            </p>
+            
+            <p>
+              Supponiamo di avere 10.000 € oggi. Con un'inflazione media del 3% annuo, tra 10 anni il potere d'acquisto scende a circa 7.400 € equivalenti. Significa che con gli stessi soldi potrai comprare molto meno, senza che tu abbia speso un centesimo.
+            </p>
+            
+            <p>
+              In altre parole, non investire equivale a perdere denaro lentamente ma inesorabilmente.
+            </p>
+            
+            <h3 className="text-xl md:text-2xl font-bold text-[#F5B800] mt-6 mb-3">La soluzione: imparare a gestire gli ETF</h3>
+            
+            <p>
+              Gli ETF (Exchange Traded Funds) rappresentano un'alternativa concreta e trasparente. Sono strumenti semplici, a basso costo, che replicano l'andamento del mercato senza gli strati di commissioni tipici dei fondi tradizionali. Imparare a conoscerli significa riprendere il controllo dei tuoi risparmi, smettere di delegare a chi ha interessi diversi dai tuoi e iniziare a costruire un portafoglio efficiente e sostenibile.
+            </p>
+            
+            <p>
+              Questo corso nasce per chi parte da zero e vuole capire, passo dopo passo, come funzionano gli ETF e come usarli per investire con consapevolezza. Non troverai teorie astratte, ma esempi pratici, strategie semplici e strumenti operativi che ti permetteranno di agire subito.
+            </p>
           </div>
 
           <div className="flex flex-wrap gap-4 animate-in fade-in slide-in-from-bottom-8 duration-700 delay-500">
