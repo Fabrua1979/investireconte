@@ -9,6 +9,7 @@ import { useToast } from '@/hooks/use-toast';
 
 export default function ContactSection() {
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -17,25 +18,48 @@ export default function ContactSection() {
     message: '',
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
     
-    const mailtoLink = `mailto:info@investireconte.com?subject=Richiesta Informazioni Corso ETF&body=Nome: ${formData.name}%0D%0AEmail: ${formData.email}%0D%0ATelefono: ${formData.phone}%0D%0AAzienda: ${formData.company}%0D%0A%0D%0AMessaggio:%0D%0A${formData.message}`;
-    
-    window.location.href = mailtoLink;
-    
-    toast({
-      title: 'Richiesta inviata!',
-      description: 'Ti contatteremo al più presto per fornirti tutte le informazioni.',
-    });
+    try {
+      const response = await fetch('https://formspree.io/f/xwpgjejg', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
 
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      company: '',
-      message: '',
-    });
+      if (response.ok) {
+        toast({
+          title: '✅ Richiesta inviata!',
+          description: 'Ti contatteremo al più presto per fornirti tutte le informazioni.',
+        });
+
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          company: '',
+          message: '',
+        });
+      } else {
+        toast({
+          title: '❌ Errore',
+          description: 'Si è verificato un errore. Riprova più tardi.',
+          variant: 'destructive',
+        });
+      }
+    } catch (error) {
+      toast({
+        title: '❌ Errore di connessione',
+        description: 'Verifica la tua connessione internet e riprova.',
+        variant: 'destructive',
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -115,6 +139,7 @@ export default function ContactSection() {
                     required
                     placeholder="Mario Rossi"
                     className="mt-1"
+                    disabled={isSubmitting}
                   />
                 </div>
 
@@ -129,6 +154,7 @@ export default function ContactSection() {
                     required
                     placeholder="mario.rossi@example.com"
                     className="mt-1"
+                    disabled={isSubmitting}
                   />
                 </div>
 
@@ -142,6 +168,7 @@ export default function ContactSection() {
                     onChange={handleChange}
                     placeholder="+39 123 456 7890"
                     className="mt-1"
+                    disabled={isSubmitting}
                   />
                 </div>
 
@@ -154,6 +181,7 @@ export default function ContactSection() {
                     onChange={handleChange}
                     placeholder="Nome della tua azienda"
                     className="mt-1"
+                    disabled={isSubmitting}
                   />
                 </div>
 
@@ -167,11 +195,16 @@ export default function ContactSection() {
                     required
                     placeholder="Scrivi qui la tua richiesta o domande sul corso..."
                     className="mt-1 min-h-32"
+                    disabled={isSubmitting}
                   />
                 </div>
 
-                <Button type="submit" className="w-full bg-[#F5B800] hover:bg-[#F5B800]/90 text-gray-900 font-bold text-lg py-6">
-                  Invia Richiesta
+                <Button 
+                  type="submit" 
+                  className="w-full bg-[#F5B800] hover:bg-[#F5B800]/90 text-gray-900 font-bold text-lg py-6"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? 'Invio in corso...' : 'Invia Richiesta'}
                   <Send className="ml-2" size={20} />
                 </Button>
 
@@ -186,7 +219,7 @@ export default function ContactSection() {
         <Card className="mt-12 bg-gradient-to-r from-[#1B7F5C] to-[#0A3A2A] text-white">
           <CardContent className="pt-8 pb-8">
             <div className="text-center">
-              <h3 className="text-3xl font-bold mb-4">Durata: 8 ore </h3>
+              <h3 className="text-3xl font-bold mb-4">Durata: 8 ore</h3>
               <p className="text-xl mb-2">POSTI LIMITATI</p>
               <p className="text-lg">
                 Prenota subito il tuo posto e inizia il tuo percorso verso l'indipendenza finanziaria
