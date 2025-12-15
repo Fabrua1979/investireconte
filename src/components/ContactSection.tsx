@@ -99,18 +99,11 @@ export default function ContactSection() {
                 <div className="flex items-start space-x-4">
                   <MapPin className="text-[#1B7F5C] flex-shrink-0 mt-1" size={24} />
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">Sedi</h4>
-                    <p className="text-gray-600">10 Locations in tutta Italia</p>
+                    <h4 className="font-semibold text-gray-900 mb-1">Sito web</h4>
+                    <p className="text-gray-600">www.investireconte.com</p>
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-4">
-                  <Phone className="text-[#1B7F5C] flex-shrink-0 mt-1" size={24} />
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">Orari</h4>
-                    <p className="text-gray-600">Lun-Ven: 9:00 - 18:00</p>
-                  </div>
-                </div>
               </CardContent>
             </Card>
 
