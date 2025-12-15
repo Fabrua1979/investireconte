@@ -27,14 +27,6 @@ export default function Footer() {
                   info@investireconte.com
                 </a>
               </div>
-              <div className="flex items-center space-x-3">
-                <MapPin size={18} className="text-[#F5B800]" />
-                <span className="text-gray-300">10 Locations in Italia</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Globe size={18} className="text-[#F5B800]" />
-                <span className="text-gray-300">250+ Clienti Soddisfatti</span>
-              </div>
             </div>
           </div>
 
