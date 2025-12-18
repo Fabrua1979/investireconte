@@ -19,7 +19,7 @@ export default function WhatYouLearnSection() {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-[#0A3A2A] mb-4">Cosa Imparerai</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Un percorso completo per acquisire le competenze necessarie a gestire autonomamente i tuoi investimenti
+            Un percorso completo per acquisire le competenze necessarie a gestire autonomamente i tuoi investimenti con FORMATORI CERTIFICATI AIEF (Associazione Italiana Educatori Finanziari) - riconosciuti dal Ministero dell'Economia e Sviluppo 
           </p>
         </div>
 
