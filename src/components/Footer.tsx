@@ -14,7 +14,7 @@ export default function Footer() {
               P.IVA: IT02951580428
             </p>
             <p className="text-sm text-gray-400">
-              Il tuo partner di fiducia per il successo finanziario (FORMATORI CERTIFICATI AIEF (Associazione Italiana Educatori Finanziari) - riconosciuti dal Ministero dell'Economia e Sviluppo )
+              Il tuo partner di fiducia per il successo finanziario (<strong>FORMATORI CERTIFICATI AIEF (Associazione Italiana Educatori Finanziari) - riconosciuti dal Ministero dell'Economia e Sviluppo)</strong>
             </p>
           </div>
 
