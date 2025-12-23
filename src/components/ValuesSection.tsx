@@ -7,10 +7,19 @@ const values = [
     title: "Integrità",
     description: "Trasparenza e onestà in ogni aspetto del nostro lavoro. Non promettiamo guadagni garantiti, ma competenze reali.",
   },
-  {
+ {
     icon: Award,
     title: "Esperienza",
-    description: "In pochi anni abbiamo già accompagnato con FORMATORI CERTIFICATI AIEF (Associazione Italiana Educatori Finanziari) - riconosciuti dal Ministero dell'Economia e Sviluppo, oltre 200 persone a comprendere come gestire i propri risparmi in autonomia. La nostra forza sta nella chiarezza del metodo e nella soddisfazione di chi ci ha seguito.",
+    // Notare l'assenza di virgolette e l'uso del tag <strong>
+    description: (
+      <>
+        In pochi anni abbiamo già accompagnato con{" "}
+        <strong>
+          FORMATORI CERTIFICATI AIEF (Associazione Italiana Educatori Finanziari) - riconosciuti dal Ministero dell'Economia e Sviluppo
+        </strong>
+        , oltre 200 persone a comprendere come gestire i propri risparmi in autonomia. La nostra forza sta nella chiarezza del metodo e nella soddisfazione di chi ci ha seguito.
+      </>
+    ),
   },
   {
     icon: Lightbulb,
