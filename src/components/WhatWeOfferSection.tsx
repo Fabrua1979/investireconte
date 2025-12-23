@@ -20,7 +20,15 @@ const offerings = [
   {
     icon: Mail,
     title: 'Assistenza Continua',
-    description: 'Supporto via email dedicato per rispondere a tutte le tue domande anche dopo il corso da parte di FORMATORI CERTIFICATI AIEF (Associazione Italiana Educatori Finanziari).',
+    description: (
+      <>
+        Supporto via email dedicato per rispondere a tutte le tue domande anche dopo il corso da parte di{' '}
+        <strong>
+          FORMATORI CERTIFICATI AIEF (Associazione Italiana Educatori Finanziari)
+        </strong>
+        .
+      </>
+    ),
   },
 ];
 
