@@ -1,16 +1,34 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setIsMenuOpen(false);
+    if (location.pathname !== '/') {
+      navigate('/');
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
     }
+    setIsMenuOpen(false);
+  };
+
+  const navigateToPage = (path: string) => {
+    navigate(path);
+    setIsMenuOpen(false);
   };
 
   return (
@@ -18,13 +36,18 @@ export default function Navbar() {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <h1 className="text-2xl font-bold text-[#1B7F5C]">InvestireConTE</h1>
+            <button onClick={() => navigateToPage('/')} className="text-2xl font-bold text-[#1B7F5C] hover:text-[#0A3A2A] transition-colors">
+              Investire con ME
+            </button>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <button onClick={() => scrollToSection('home')} className="text-gray-700 hover:text-[#1B7F5C] transition-colors">
               Home
+            </button>
+            <button onClick={() => navigateToPage('/chi-siamo')} className="text-gray-700 hover:text-[#1B7F5C] transition-colors">
+              Chi Siamo
             </button>
             <button onClick={() => scrollToSection('perche')} className="text-gray-700 hover:text-[#1B7F5C] transition-colors">
               Perché Investire
@@ -54,6 +77,9 @@ export default function Navbar() {
           <div className="md:hidden mt-4 pb-4 space-y-4">
             <button onClick={() => scrollToSection('home')} className="block w-full text-left text-gray-700 hover:text-[#1B7F5C] transition-colors">
               Home
+            </button>
+            <button onClick={() => navigateToPage('/chi-siamo')} className="block w-full text-left text-gray-700 hover:text-[#1B7F5C] transition-colors">
+              Chi Siamo
             </button>
             <button onClick={() => scrollToSection('perche')} className="block w-full text-left text-gray-700 hover:text-[#1B7F5C] transition-colors">
               Perché Investire
